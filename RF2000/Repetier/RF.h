@@ -278,6 +278,10 @@
   - Examples:
   - M3115 ; sets the x/y origin to the current x/y position
 
+- M3116 - set the x/y/z origin to the current x/y/z position
+  - Examples:
+  - M3116 ; sets the x/y/z origin to the current x/y/z position
+
 - M3117 [message] - Set a status text which is not overwritten by M117
   - Examples:
   - M3117 My RF rocks ; displays the text "My RF rocks" in the 4. row of the display until it is overwritten through another M3117

@@ -7926,6 +7926,11 @@ void processCommand( GCode* pCommand )
 	            Printer::setOrigin(-Printer::queuePositionLastMM[X_AXIS],-Printer::queuePositionLastMM[Y_AXIS],Printer::originOffsetMM[Z_AXIS]);
 				break;
 			}
+			case 3116:	// M3116 - set the x/y/z origin to the current x/y/z position
+			{
+	            Printer::setOrigin(-Printer::queuePositionLastMM[X_AXIS],-Printer::queuePositionLastMM[Y_AXIS],-Printer::originOffsetMM[Z_AXIS]);
+				break;
+			}
 			case 3117:	// M3117 - set a status text which is not overwritten by M117
 			{
 				if( pCommand->hasString() )
